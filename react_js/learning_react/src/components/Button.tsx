@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface Props {
 	children: string;
 	onClick: () => void;
