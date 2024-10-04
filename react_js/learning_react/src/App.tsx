@@ -1,7 +1,21 @@
-import Message from './Message';
+import ListGroup from "./components/ListGroup";
 
 function App() {
-  return <div><Message></Message></div>;
+	let items = ["New York", "San Fransisco", "Mumbai"];
+
+	const handleSelection = (item: string) => {
+		console.log(item);
+	};
+
+	return (
+		<>
+			<ListGroup
+				items={items}
+				heading="Cities"
+				onSelectItem={handleSelection}
+			/>
+		</>
+	);
 }
 
 export default App;
